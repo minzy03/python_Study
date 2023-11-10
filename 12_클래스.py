@@ -13,3 +13,15 @@ player1 = SoccerPlayer('손흥민', 'MF', 10)
 print(player1.name)
 print(player1.positon)
 print(player1.backNumber)
+
+# %%
+#소수 판별
+inNum = int(input("소수 판별을 위한 숫자 입력 > "))
+for i in range(2, inNum) :
+    if inNum % i == 0 :
+        #소수가 아님
+        print("소수가 아닙니다.")
+        break
+else :
+    #for문이 정상적으로 모두 실행되었을때
+    print("소수입니다.") 
